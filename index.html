@@ -7,6 +7,8 @@
   <title>Document</title>
   <!-- font -->
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -16,24 +18,48 @@
   <div class="wrap">
     <!-- ========== header ========== -->
     <header class="header">
-      <a href="#" class="logo">Concierge.</a>
+      <h1 class="logo">
+        <a href="#" class="logo__link">Concierge.</a>
+      </h1>
       <nav class="gnb">
-        <ul class="gnb__inner">
-          <li class="gnb__menu">
-            <a href="#" class="gnb__link">about</a>
-          </li>
-          <li class="gnb__menu">
-            <a href="#" class="gnb__link">service</a>
-          </li>
-          <li class="gnb__menu">
-            <a href="#" class="gnb__link">membership</a>
-          </li>
-          <li class="gnb__menu">
-            <a href="#" class="gnb__link">consulting</a>
-          </li>
-          <li class="gnb__menu">
-            <a href="#" class="gnb__link">contact</a>
-        </ul>
+        <div class="gnb__inner">
+          <a href="#" class="gnb__link">about</a>
+          <a href="#" class="gnb__link">service</a>
+          <a href="#" class="gnb__link">membership</a>
+          <a href="#" class="gnb__link">consulting</a>
+          <a href="#" class="gnb__link">contact</a>
+        </div>
+        <!-- ========== mobile nav ========== -->
+        <div class="gnb__bg"></div>
+        <div class="mo-nav">
+          <div class="mo-nav__menu">
+            <a href="#" class="mo-nav__link">
+              <span class="mo-nav__link-text">about</span>
+            </a>
+            <a href="#" class="mo-nav__link">
+              <span class="mo-nav__link-text">service</span>
+            </a>
+            <a href="#" class="mo-nav__link">
+              <span class="mo-nav__link-text">membership</span>
+            </a>
+            <a href="#" class="mo-nav__link">
+              <span class="mo-nav__link-text">consulting</span>
+            </a>
+            <a href="#" class="mo-nav__link">
+              <span class="mo-nav__link-text">contact</span>
+            </a>
+          </div>
+          <div class="mo-nav__social">
+            <a href="#" class="mo-nav__link-sns facebook">
+              <i class="fab fa-facebook-f"></i>
+              <span class="blind">돕다의 페이스북으로 이동</span>
+            </a>
+            <a href="#" class="mo-nav__link-sns instagram">
+              <i class="fab fa-instagram"></i>
+              <span class="blind">돕다의 인스타그램으로 이동</span>
+            </a>
+          </div>
+        </div>
       </nav>
     </header>
     <!-- ========== visual ========== -->
@@ -82,6 +108,46 @@
             <img src="./image/arrow_btn.png" alt="">
           </span>
         </a>
+      </div>
+    </section>
+    <!-- ========== about ========== -->
+    <section class="about">
+      <div class="about__inner">
+        <h2 class="section-title">글로벌 컨시어지 서비스와 함께 하세요.</h2>
+        <div class="about__line-box">
+          <span class="about__line"></span>
+          <ul class="about__dots">
+            <li class="about__dot a"></li>
+            <li class="about__dot b"></li>
+            <li class="about__dot c"></li>
+          </ul>
+          <ul class="about__text-list">
+            <li class="about__text">
+              <strong class="about__subject">Our Solutions</strong>
+              <p class="about__desc">
+                국내 최고의 비즈니스 의전 교육기관 <br>
+                한국팔로워십센터에서 론칭한 컨시어지 서비스로 <br>
+                최상의 서비스를 제공합니다.
+              </p>
+            </li>
+            <li class="about__text">
+              <strong class="about__subject">Our Strengths</strong>
+              <p class="about__desc">
+                국가 및 기업들의 다양한 비즈니스 행사와 <br>
+                주요 VIP들을 대상으로 한 의전 경험으로 <br>
+                체계적인 서비스를 제공합니다.
+              </p>
+            </li>
+            <li class="about__text">
+              <strong class="about__subject">Our Visions</strong>
+              <p class="about__desc">
+                글로벌 컨시어지 서비스, 돕다(DOPDA)는  <br>
+                국내를 넘어 범아시아권에서 기준이  <br>
+                될 수 있는 컨시어지 서비스를 제공합니다.
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </div>
