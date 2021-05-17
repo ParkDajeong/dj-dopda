@@ -7,8 +7,6 @@
   <title>Document</title>
   <!-- font -->
   <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
   <!-- CSS -->
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
@@ -16,6 +14,11 @@
   <!-- JS -->
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
   <script src="./js/main.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+  <!-- slick slide -->
+  <link rel="stylesheet" href="./css/slick/slick.css">
+  <script src="./js/slick/slick.min.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -75,21 +78,75 @@
     </header>
     <!-- ========== visual ========== -->
     <section class="visual">
-      <div class="slide visual__slide">
-        <img src="./image/main_visual.jpg" alt="">
-        <span class="slide__mask a"></span>
-        <span class="slide__mask b"></span>
-        <span class="slide__mask c"></span>
-        <span class="slide__mask d"></span>
-      </div>
-      <div class="visual__text">
-        <h2 class="visual__title">
-          For Your Business & Life
-        </h2>
-        <p class="visual__desc">
-          돕다는 글로벌 컨시어지 서비스 그룹입니다. <br>
-          귀사와 귀하의 품격에 맞는 서비스를 제공합니다.
-        </p>
+      <!-- slide -->
+      <div class="visual__slide-wrap">
+        <ul class="slide-page">
+          <li class="slide-page__item on">
+            <img src="./image/1.png" alt="슬라이드 1">
+          </li>
+          <li class="slide-page__item">
+            <img src="./image/2.png" alt="슬라이드 2">
+          </li>
+          <li class="slide-page__item">
+            <img src="./image/3.png" alt="슬라이드 3">
+          </li>
+        </ul>
+        <ul class="slide">
+          <li class="slide__item">
+            <div class="slide__photo">
+              <div class="slide__img-box">
+                <img class="slide__img" src="./image/main_visual1.jpg" alt="">
+              </div>
+              <span class="slide__mask a"></span>
+              <span class="slide__mask b"></span>
+              <span class="slide__mask c"></span>
+              <span class="slide__mask d"></span>
+            </div>
+            <div class="slide__text">
+              <strong class="slide__title">For Your Business & Life</strong>
+              <p class="slide__desc">
+                돕다는 글로벌 컨시어지 서비스 그룹입니다. <br>
+                귀사와 귀하의 품격에 맞는 서비스를 제공합니다.
+              </p>
+            </div>
+          </li>
+          <li class="slide__item">
+            <div class="slide__photo">
+              <div class="slide__img-box">
+                <img class="slide__img" src="./image/main_visual2.jpg" alt="">
+              </div>
+              <span class="slide__mask a"></span>
+              <span class="slide__mask b"></span>
+              <span class="slide__mask c"></span>
+              <span class="slide__mask d"></span>
+            </div>
+            <div class="slide__text">
+              <strong class="slide__title">For Your Business & Life</strong>
+              <p class="slide__desc">
+                돕다는 글로벌 컨시어지 서비스 그룹입니다. <br>
+                귀사와 귀하의 품격에 맞는 서비스를 제공합니다.
+              </p>
+            </div>
+          </li>
+          <li class="slide__item">
+            <div class="slide__photo">
+              <div class="slide__img-box">
+                <img class="slide__img" src="./image/main_visual3.png" alt="">
+              </div>
+              <span class="slide__mask a"></span>
+              <span class="slide__mask b"></span>
+              <span class="slide__mask c"></span>
+              <span class="slide__mask d"></span>
+            </div>
+            <div class="slide__text">
+              <strong class="slide__title">For Your Business & Life</strong>
+              <p class="slide__desc">
+                돕다는 글로벌 컨시어지 서비스 그룹입니다. <br>
+                귀사와 귀하의 품격에 맞는 서비스를 제공합니다.
+              </p>
+            </div>
+          </li>
+        </ul>
       </div>
       <div class="visual__menu">
         <a href="#" class="visual__menu-link">
