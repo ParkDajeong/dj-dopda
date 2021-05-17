@@ -41,7 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 120px;
+  height: 115px;
   padding: 0 60px;
   z-index: 10;
 }
@@ -89,18 +89,30 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
   z-index: -1;
+  transition: 0.3s;
+}
+
+.gnb__bg.on {
+  opacity: 1;
+  visibility: visible;
 }
 
 .mo-nav {
   background-color: white;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -400px;
   width: 400px;
-  min-width: 300px;
   height: 100%;
   z-index: 1;
+  transition: right 0.3s;
+}
+
+.mo-nav.on {
+  right: 0;
 }
 
 .mo-nav__menu {
@@ -233,7 +245,7 @@ body {
 /* ========== visual ========== */
 .visual {
   position: relative;
-  margin-top: 120px;
+  margin-top: 115px;
   padding-bottom: 50px;
 }
 
