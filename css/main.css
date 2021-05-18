@@ -33,6 +33,7 @@ body {
 
 /* ========== header ========== */
 .header {
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -43,6 +44,17 @@ body {
   height: 115px;
   padding: 0 60px;
   z-index: 10;
+  transition: 0.5s;
+}
+
+.header.off {
+  background-color: transparent;
+  top: -115px;
+}
+
+.header.on {
+  background-color: white;
+  top: 0px;
 }
 
 .gnb {
