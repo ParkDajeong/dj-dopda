@@ -25,7 +25,6 @@ body {
 
 .section-title {
   font-size: 30px;
-  color: #fff;
 }
 
 .logo__link {
@@ -481,6 +480,7 @@ body {
 }
 
 .about .section-title {
+  color: #fff;
   animation: slide-up 1.2s ease-out both;
 }
 
@@ -580,6 +580,98 @@ body {
   font-weight: 300;
   line-height: 1.6;
   word-break: keep-all;
+}
+
+/* ========== premium ========== */
+.premium {
+  overflow: hidden;
+}
+
+.premium__inner {
+  background: url(../image/con2_bg.jpg) no-repeat center / cover;
+  position: relative;
+  width: 95%;
+  height: 1020px;
+  padding: 100px 0;
+  margin: 40px auto;
+}
+
+.premium__bg-img {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.premium__text {
+  position: absolute;
+  left: 8%;
+  top: 35%;
+}
+
+.premium .section-title {
+  margin-bottom: 20px;
+}
+
+.premium__desc {
+  margin-bottom: 30px;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.premium__link-more {
+  position: relative;
+  display: inline-block;
+  font-size: 24px;
+}
+
+.premium__link-more::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.08);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px;
+  height: 15px;
+  transition: 0.5s;
+}
+
+.premium__link-more:hover::before {
+  width: 0;
+}
+
+.premium__gallery-item {
+  position: absolute;
+  width: 15%;
+  box-shadow: 5px 6px 15px rgb(3 3 3 / 40%);
+}
+
+.premium__gallery-item:nth-of-type(1) {
+  top: 15%;
+  left: 45%;
+}
+
+.premium__gallery-item:nth-of-type(2) {
+  top: 50%;
+  left: 37%;
+}
+
+.premium__gallery-item:nth-of-type(3) {
+  top: 62%;
+  left: 55%;
+}
+
+.premium__gallery-item:nth-of-type(4) {
+  top: 10%;
+  right: 2%;
+  width: 32%;
+  max-width: 580px;
+}
+
+.premium__gallery-item img {
+  display: block;
+  width: 100%;
 }
 
 /* =============================== */
