@@ -30,7 +30,7 @@ $(function() {
       hasScrolled();
       isScroll = false;
     }
-  }, 300);
+  }, 200);
 
   // mobile nav
   $(window).resize(function() {
