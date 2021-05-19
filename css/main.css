@@ -480,17 +480,22 @@ body {
   text-align: center;
 }
 
+.about .section-title {
+  animation: slide-up 1.2s ease-out both;
+}
+
 .about__line-box {
   position: relative;
   width: 45%;
-  margin: 90px 0 40px;
+  margin: 80px 0 50px;
 }
 
 .about__line {
-  background-color: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.3);
   display: block;
   width: 100%;
   height: 1px;
+  animation: show 1s ease-out 0.5s both;
 }
 
 .about__dots {
@@ -504,9 +509,37 @@ body {
 
 .about__dot {
   background-color: #fff;
+  position: relative;
   width: 6px;
   height: 6px;
   border-radius: 50%;
+  animation: show 1s ease-out both;
+}
+
+.about__dot.a {
+  animation-delay: 1.2s;
+}
+
+.about__dot.b {
+  animation-delay: 1.6s;
+}
+
+.about__dot.c {
+  animation-delay: 2s;
+}
+
+.about__dot::before {
+  background-color: rgba(255, 255, 255, 0.7);
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  margin-top: -3px;
+  margin-left: -3px;
+  border-radius: 50%;
+  animation: dot-ani 1.5s infinite 0.8s;
 }
 
 .about__text-list {
@@ -521,8 +554,18 @@ body {
   letter-spacing: -0.2px;
 }
 
-.about__text:last-child {
+.about__text:nth-of-type(1) {
+  animation: slide-up 1.2s ease-out 1.5s both;
+}
+
+.about__text:nth-of-type(2) {
+  animation: slide-up 1.2s ease-out 1.7s both;
+}
+
+.about__text:nth-of-type(3) {
   margin-right: 0;
+  animation: slide-up 1.2s ease-out 1.9s both;
+
 }
 
 .about__subject {
@@ -539,7 +582,7 @@ body {
   word-break: keep-all;
 }
 
-
+/* =============================== */
 /* ========== animation ========== */
 @keyframes mask {
   0%, 40% {
@@ -564,5 +607,25 @@ body {
   40% {
     opacity: 0;
     transform: translateY(40px);
+  }
+}
+
+@keyframes show {
+  0%, 40% {
+    opacity: 0;
+  }
+}
+
+@keyframes dot-ani {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  40%{
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(3);
+    opacity: 0;
   }
 }
