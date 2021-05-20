@@ -14,6 +14,8 @@ $(function() {
     if(current > lastScrollTop && current > headerHeight) {
       $(".header").addClass("off");
       $(".header").removeClass("on");
+    } else if (current === 0) {
+      $(".header").removeClass("off on");
     } else {
       $(".header").addClass("on");
     }
@@ -42,6 +44,8 @@ $(function() {
         $(".mo-nav").removeClass("on");
         $(".gnb__bg").removeClass("on");
       }
+    } else {
+      $(".header").removeClass("off on");
     }
   })
 
