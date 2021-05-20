@@ -75,4 +75,13 @@ $(function() {
     $(".slide-page__item").removeClass("on");
     $(".slide-page__item").eq(next).addClass("on");
   });
+
+  // scrolla plugin
+  $(".animate").scrolla({
+    once: true,
+  });
+
+  $(".animate-repeat").scrolla({
+    once: false,
+  });
 });

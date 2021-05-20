@@ -11,14 +11,17 @@
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/responsive.css">
-  <!-- JS -->
+  <!-- jQuery -->
   <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-  <script src="./js/main.js"></script>
   <!-- font awesome -->
   <script src="https://kit.fontawesome.com/d0b8e988b1.js" crossorigin="anonymous"></script>
+  <!-- scrolla -->
+  <script src="./js/scrolla/jquery.scrolla.min.js"></script>
   <!-- slick slide -->
   <link rel="stylesheet" href="./css/slick/slick.css">
   <script src="./js/slick/slick.min.js"></script>
+  <!-- JS -->
+  <script src="./js/main.js"></script>
 </head>
 <body>
   <div class="wrap">
@@ -180,8 +183,8 @@
     </section>
     <!-- ========== about ========== -->
     <section class="about">
-      <div class="about__inner">
-        <h2 class="section-title">글로벌 컨시어지 서비스, 돕다(DOPDA)와 함께 하세요.</h2>
+      <div class="about__inner animate" data-animate="motion">
+        <h2 class="section-title about__section-title">글로벌 컨시어지 서비스, 돕다(DOPDA)와 함께 하세요.</h2>
         <div class="about__line-box">
           <span class="about__line"></span>
           <ul class="about__dots">
@@ -220,7 +223,7 @@
     </section>
     <!-- ========== premium ========== -->
     <section class="premium">
-      <div class="premium__inner">
+      <div class="premium__inner animate" data-animate="motion">
         <span class="premium__bg-img">
           <img src="./image/pre_img.png" alt="">
         </span>
@@ -250,7 +253,7 @@
     </section>
     <!-- ========== service ========== -->
     <section class="service">
-      <div class="service__inner">
+      <div class="service__inner animate" data-animate="motion">
         <div class="service__text">
           <h2 class="section-title service__section-title ">Global Concierge Services</h2>
           <p class="service__sub-text">
@@ -340,7 +343,7 @@
           <span class="footer__copyright">COPYRIGHT 2021</span>
         </p>
       </div>
-      <div class="footer__bottom">
+      <div class="footer__bottom animate-repeat" data-animate="motion">
         <p class="footer__typo">
           전세계 어디든 나만의 컨시어지가 있다.<br>
           For Your Business & Life
