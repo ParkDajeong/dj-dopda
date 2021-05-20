@@ -192,6 +192,27 @@
   .service__desc {
     font-size: 16px;
   }
+
+  /* ========== footer ========== */
+  .footer__logo {
+    margin: 35px 0;
+  }
+
+  .footer__logo .logo__link {
+    font-size: 35px;
+  }
+
+  .footer__company {
+    font-size: 16px;
+  }
+
+  .footer__bottom {
+    padding: 120px 0;
+  }
+
+  .footer__typo {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 950px) {
@@ -466,6 +487,40 @@
 
   .service__desc {
     font-size: 13px;
+  }
+
+  /* ========== footer ========== */
+  .footer__top {
+    margin-top: 50px;
+  }
+
+  .sns-list__link {
+    margin-right: 25px;
+  }
+
+  .sns-list__link img {
+    width: 90%;
+  }
+
+  .footer__logo {
+    margin: 30px 0;
+  }
+
+  .footer__logo .logo__link {
+    font-size: 30px;
+  }
+
+  .footer__company {
+    font-size: 14px;
+  }
+
+  .footer__bottom {
+    margin-top: 50px;
+    padding: 100px 0;
+  }
+
+  .footer__typo {
+    font-size: 18px;
   }
 }
 

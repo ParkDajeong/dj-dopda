@@ -772,6 +772,60 @@ body {
   word-break: keep-all;
 }
 
+/* ========== footer ========== */
+.footer {
+  text-align: center;
+}
+
+.footer__top {
+  margin-top: 80px;
+}
+
+.sns-list__link {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.sns-list__link:last-child {
+  margin-right: 0;
+}
+
+.sns-list__link img {
+  vertical-align: middle;
+}
+
+.footer__logo {
+  margin: 40px 0;
+}
+
+.footer__logo .logo__link {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.footer__company {
+  font-size: 17px;
+}
+
+.footer__copyright {
+  display: block;
+  margin-top: 20px;
+  color: #888;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.footer__bottom {
+  background: url(../image/bottom_bg.jpg) no-repeat center / cover;
+  margin-top: 80px;
+  padding: 150px 0;
+}
+
+.footer__typo {
+  color: #fff;
+  font-size: 22px;
+}
+
 /* =============================== */
 /* ========== animation ========== */
 @keyframes mask {
