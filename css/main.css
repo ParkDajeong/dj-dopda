@@ -842,6 +842,7 @@ body {
 .footer__typo {
   color: #fff;
   font-size: 22px;
+  animation: slide-up 1.1s ease-out both;
 }
 
 /* =============================== */
