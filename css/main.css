@@ -62,6 +62,10 @@ body {
   box-shadow: 0px 2px 15px rgb(3 3 3 / 12%);
 }
 
+.header.mobile {
+  box-shadow: 0px 2px 15px rgb(3 3 3 / 12%);
+}
+
 .gnb {
   height: 100%;
 }

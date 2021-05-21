@@ -8,8 +8,11 @@ $(function() {
   function hasScrolled() {
     const current = $(window).scrollTop();
     
-    if($(window).width() < 1100) return;
     if(Math.abs(lastScrollTop - current) <= delta) return;
+    if($(window).width() < 1100) {
+      hasScrolledInMobile();
+      return;
+    };
 
     if(current > lastScrollTop && current > headerHeight) {
       $(".header").addClass("off");
@@ -21,6 +24,16 @@ $(function() {
     }
 
     lastScrollTop = current;
+  }
+
+  function hasScrolledInMobile() {
+    const current = $(window).scrollTop();
+    
+    if(current > lastScrollTop && current > headerHeight) {
+      $(".header").addClass("mobile");
+    } else if (current === 0) {
+      $(".header").removeClass("mobile");
+    }
   }
 
   $(window).scroll(function(e) {
