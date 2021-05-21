@@ -62,25 +62,27 @@ $(function() {
     }
   })
 
-  $(function() {
-    $(".gnb__btn-menu, .gnb__bg").on("click", function() {
-      $(".gnb__btn-menu").toggleClass("on");
-      $(".mo-nav").toggleClass("on");
-      $(".gnb__bg").toggleClass("on");
-    });
+  $(".gnb__btn-menu, .gnb__bg").on("click", function() {
+    $(".gnb__btn-menu").toggleClass("on");
+    $(".mo-nav").toggleClass("on");
+    $(".gnb__bg").toggleClass("on");
+
+    if($(this).hasClass("on")) {
+      $(".gnb__btn-menu .blind em").text("닫기");
+    } else {
+      $(".gnb__btn-menu .blind em").text("열기");
+    }
   });
   
   // visual slide
-  $(function() {
-    $(".visual .slide").slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-      arrows: false,
-      dots: true,
-      fade: true,
-      pauseOnHover: false,
-      pauseOnFocus: false,
-    });
+  $(".visual .slide").slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+    arrows: false,
+    dots: true,
+    fade: true,
+    pauseOnHover: false,
+    pauseOnFocus: false,
   });
   
   // visual slide page
